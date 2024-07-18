@@ -4,6 +4,23 @@
 
 Begun: 18.7.2024
 
+### Dev Stages
+
+#### Dev Stage 1
+
+19.7.2024
+
+- [ ] Basic UI
+    - Info, Canvas, Settings
+- [ ] Implement generateCanvas(size)
+    - Creates canvas, with each pixel having event listener, that'll add specific value to array in specific place
+- [ ] Implement canvas saving and loading
+    - [ ] Save canvas
+    - [ ] Download canvas
+    - [ ] Load canvas
+    - [ ] Load canvas from file
+- [ ] Implement settings
+
 ### Planning
 
 Simple pixel drawing app with the ability to store drawing on device. Goal of the project being to learn to develop mildly complex projects. Core design requirements are responsive design, and intuitive user experience.
@@ -13,23 +30,28 @@ Simple pixel drawing app with the ability to store drawing on device. Goal of th
 Height no more than 100vh, relaxed minimal styling
 
 Left on opening website
+
 - List of past 50 saved drawings, overflow deleted
     - Name, date, delete button (requires pressing twice to delete, increasing color)
 - Note at bottom about oldest drawings being deleted if over 50 drawing
+- Link to GitHub repo at bottom
 - Delete all button, requires confirmation via pop up requesting user to write "CONFIRM"
 - Content overflow set to make the overflow be scrollable locally
 - Hidden when drawing begins
 
 Left when drawing
+
 - Drawing name input
 - Save button
 - View past drawing button at bottom -> opens list at bottom left
 
 Middle
+
 - Drawing area, by default 32x32 grid
 - Small borders between squares, border collapse on
 
 Right setting
+
 - Grid size
 - Generate new grid
 - 16 color palette
@@ -42,13 +64,14 @@ Right setting
 
 A new drawing
 
-Website opened -> Draw -> Left side changes to saving options -> Save -> List of past drawing on left -> Continue drawing -> Left side changes to saving options
+Website opened -> Draw -> Left side changes to saving options -> Save -> List of past drawing on left -> Continue drawing -> Left side changes to saving options -> ...
 
 Website opened -> Selects saved drawing -> Draw -> Left side changes to saving options -> ...
 
 #### Saving
 
 Example of storing data locally in browser:
+
 ```javascript
 // Storing
 const data = { name: "John", age: 30 };
