@@ -6,7 +6,7 @@ Begun: 18.7.2024
 
 ### Planning
 
-Simple pixel drawing app with the ability to store drawing on device. Goal of the project being to learn to develop mildly complex projects. Core design requirements are responsive design, and intuitive user interface.
+Simple pixel drawing app with the ability to store drawing on device. Goal of the project being to learn to develop mildly complex projects. Core design requirements are responsive design, and intuitive user experience.
 
 #### UI
 
@@ -54,18 +54,19 @@ Example of storing data locally in browser:
 const data = { name: "John", age: 30 };
 localStorage.setItem('userData', JSON.stringify(data));
 
-// Retrieving (even after browser restart)
+// Retrieving
 const retrievedData = JSON.parse(localStorage.getItem('userData'));
 ```
 
-Structure
+##### Data structure
+
 - Saves
     - saveID
         - Name
         - Date and time
         - Program versio
         - Drawing data
-            - Size (must be 1/1, so only one integer stored)
+            - Size (must be 1/1 aspect ratio, so only one integer stored)
             - Drawing
                 - Each row in array
                 - Each pixel in array
@@ -73,6 +74,11 @@ Structure
 
 #### Future features
 
-Allowing to download drawing in JSON. Allowing to load those files too.
-
-Sharing solution or something alike
+- Allowing to download drawing in JSON. Allowing to load those files too.
+- A way to easily share drawings
+- Ability to download drawings as PNG
+- Ability to make animations
+    - Onion skin
+    - Frame rate
+    - Preview
+    - Ability to export animations as GIF
