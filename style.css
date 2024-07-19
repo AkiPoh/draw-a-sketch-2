@@ -1,0 +1,85 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    margin: 0px;
+}
+
+main {
+    padding: 15px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+#infoContainer, #settingsContainer {
+    padding: 15px;
+    margin: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#infoContainer {
+    background-color: aliceblue;
+}
+
+.saves {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.saveList {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 8px;
+    overflow-x: auto;
+    max-height: 100%;
+}
+
+.saveListItem {
+    display: flex;
+    gap: 6px;
+}
+
+.saveOpen {
+    word-break: break-all;
+}
+
+#canvasContainer {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: antiquewhite;
+    justify-self: center;
+}
+
+#settingsContainer {
+    background-color: blanchedalmond;
+}
