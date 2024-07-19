@@ -66,11 +66,19 @@ main {
 
 .saveListItem {
     display: flex;
-    gap: 6px;
+    gap: 15px;
 }
 
 .saveOpen {
     word-break: break-all;
+}
+
+.saveListItemInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
 }
 
 #canvasContainer {
