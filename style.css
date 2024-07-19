@@ -1,9 +1,11 @@
 body {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+
     width: 100%;
     height: 100vh;
-    box-sizing: border-box;
+    
     display: flex;
     flex-direction: column;
 }
@@ -18,23 +20,29 @@ h1, h2 {
 
 main {
     padding: 15px;
+
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
+
     display: flex;
     justify-content: center;
     align-items: stretch;
+
     gap: 25px;
 }
 
 #infoContainer, #settingsContainer {
     padding: 15px;
     margin: 15px;
+    box-sizing: border-box;
+
     flex: 1;
     display: flex;
     flex-direction: column;
+
     gap: 20px;
-    box-sizing: border-box;
+    
     overflow: hidden;
 }
 
@@ -46,26 +54,34 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+
     gap: 15px;
+
     overflow: hidden;
 }
 
 .saveList {
-    list-style: none;
     padding: 0px;
     margin: 0px;
-    width: 100%;
+
     flex: 1;
+    width: 100%;
+
+    list-style: none;
+
     display: flex;
     flex-direction: column;
     align-items: space-between;
+
     gap: 8px;
+
     overflow-x: auto;
     max-height: 100%;
 }
 
 .saveListItem {
     display: flex;
+
     gap: 15px;
 }
 
@@ -74,18 +90,56 @@ main {
 }
 
 .saveListItemInfo {
+    width: 100%;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    
     gap: 5px;
 }
 
 #canvasContainer {
+    padding: 15px;
+    box-sizing: border-box;
+
     height: 100%;
+
     aspect-ratio: 1/1;
+
     background-color: antiquewhite;
+    
     justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.canvas, .canvasPixel {
+    border-collapse: collapse;
+    border: solid rgb(80, 80, 80) 1px;
+}
+
+.canvas {
+    flex: 1;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.canvasRow {
+    flex: 1;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.canvasPixel {
+    flex: 1;
 }
 
 #settingsContainer {
