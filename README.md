@@ -10,7 +10,9 @@ Begun: 18.7.2024
 
 19.7.2024
 
-- [ ] Basic UI
+Minimal UI with basic functionality
+
+- [x] Basic UI
     - Info, Canvas, Settings
 - [ ] Implement generateCanvas(size)
     - Creates canvas, with each pixel having event listener, that'll add specific value to array in specific place
